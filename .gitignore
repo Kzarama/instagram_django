@@ -1,6 +1,8 @@
 media/
 migrations/
 pictures/
+static/
+.vscode/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
