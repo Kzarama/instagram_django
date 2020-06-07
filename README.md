@@ -1,10 +1,32 @@
-# Instagram
+# Instagram_django
 
-project made in django using a db sqlite
+Project copy of Instagram de Facebook using django and a database sqlite3
+## To run the project
+
+To create the database and reflect the migrations in the database run:
+~~~bash
+python3 manage.py makemigrations
+~~~
+To migrate the changes at the database run:
+~~~bash
+python3 manage.py migrate
+~~~
+Create superuser
+~~~bash
+python3 manage.py createsuperuser
+~~~
+To run the server
+~~~bash
+python3 manage.py runserver
+~~~
+
+---
+
+# To use django with a database (sqlite3)
 
 ## Create a model (table of db)
 For create a table, have to create a class  
-__str__ = method to string, return a string when is called
+__ str__ = method to string, return a string when is called
 ~~~python
 class User(models.Model):
     first_name = models.CharField(max_length=100)
@@ -24,7 +46,7 @@ To make migrations then of create a new model run
 ~~~bash
 manage.py makemigrations
 ~~~
-and this create a new file in migrations folder with the fields and the tables, and create a new file for each change in the model, then run for save the changes in the db
+And this create a new file in migrations folder with the fields and the tables, and create a new file for each change in the model, then run for save the changes in the db
 ~~~bash
 manage.py migrate
 ~~~
@@ -62,6 +84,7 @@ Delete a entity
 kevin.delete()
 ~~~
 ## Queries
+In bash run:
 - query for an entity
     ~~~bash
     user = User.objects.get(first_name='kevin')
