@@ -1,5 +1,8 @@
+# Test data
 media/
 migrations/
+
+# Visual Studio Code
 .vscode/
 
 # Byte-compiled / optimized / DLL files
